@@ -1,0 +1,14 @@
+
+.outer-hero{
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+
+.inner-hero {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    /* background: #4B4AEF; */
+    background-image: url("../assets/images/hero-mask.svg");
+}

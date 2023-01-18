@@ -1,0 +1,117 @@
+.btn {
+	@apply px-8 py-3 flex self-center rounded-[10px] text-sm relative overflow-hidden font-normal;
+}
+
+.btn-secondary {
+	@apply bg-secondary text-darkgray ;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 20%);
+    top: 0;
+    left: -120%;;
+    transform: skew(-30deg);
+    z-index: 10;
+    transition: all .5s cubic-bezier(.34,.7,.18,.85);
+}
+
+.btn:hover::before{
+    left: -20%
+}
+
+.btn-ghost {
+	@apply bg-[transparent] text-gray;
+}
+
+.expand ~ span {
+    transition: all 200ms;
+}
+
+.expand:hover ~ span {
+    width: 100%;
+}
+
+.link span::before {
+    content: "";
+    display: flex;
+    width: 0px;
+    background: #2B3377;
+    height: 2px;
+    transition: all 500ms;
+}
+
+.link:hover span::before{
+    margin-right: 4px;
+    width: 8px;
+}
+
+@keyframes bounce-anim {
+	0%,
+	100% {
+		transform: translateY(-10%);
+	}
+	50% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes bounce-far-anim {
+	0%,
+	100% {
+		transform: translateY(-50%);
+	}
+	50% {
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 60s linear infinite;
+    -moz-animation: rotating 60s linear infinite;
+    -ms-animation: rotating 60s linear infinite;
+    -o-animation: rotating 60s linear infinite;
+    animation: rotating 60s linear infinite;
+  }
+
+.bounce {
+    animation: bounce-anim 3s ease-in-out infinite;
+}
+.bounce-far {
+    animation: bounce-far-anim 5s ease-in-out infinite;
+}
+
+.bounce-delay{
+    animation-delay: 500ms;
+}

@@ -1,0 +1,52 @@
+@import "../styles/main.css";
+@import "../styles/hero.css";
+
+@font-face {
+    font-family: Nunito;
+    src: url("../assets/fonts/NunitoSans-Bold.ttf");
+    font-weight: bold;
+  }
+  
+@font-face {
+    font-family: Nunito;
+    src: url("../assets/fonts/NunitoSans-Light.ttf");
+    font-weight: 300;
+  }
+
+  
+@font-face {
+    font-family: Nunito;
+    src: url("../assets/fonts/NunitoSans-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: Nunito;
+    src: url("../assets/fonts/NunitoSans-SemiBold.ttf");
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    src: url("../assets/fonts/Poppins-Bold.ttf");
+    font-weight: bold;
+  }
+  
+@font-face {
+    font-family: Nunito;
+    src: url("../assets/fonts/Poppins-Light.ttf");
+    font-weight: 300;
+  }
+
+  
+@font-face {
+    font-family: Nunito;
+    src: url("../assets/fonts/Poppins-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: Nunito;
+    src: url("../assets/fonts/Poppins-SemiBold.ttf");
+    font-weight: 600;
+  }
