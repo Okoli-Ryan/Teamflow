@@ -35,19 +35,33 @@
     width: 100%;
 }
 
-.link span::before {
+
+.link::before {
     content: "";
     display: flex;
+    /* position: absolute; */
     width: 0px;
     background: #2B3377;
     height: 2px;
+    margin-right: 0px;
+    transition: all 500ms;
+    display: flex;
+    align-self: center;
+}
+
+.link:hover::before{
+    margin-right: 2px;
+    width: 8px;
+}
+
+.link {
     transition: all 500ms;
 }
 
-.link:hover span::before{
-    margin-right: 4px;
-    width: 8px;
+.link:hover {
+    /* padding-left: 10px; */
 }
+
 
 @keyframes bounce-anim {
 	0%,

@@ -44,7 +44,7 @@ function FooterLink({ label, links }) {
 			<div className="flex flex-col space-y-4">
 				{links.map((link) => (
 					<a href="#" className="text-textPrimary flex text-sm link">
-						<span className="flex items-center">{link}</span>
+						{link}
 					</a>
 				))}
 			</div>
