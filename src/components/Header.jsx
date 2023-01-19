@@ -6,30 +6,31 @@ import { RiMenu2Fill } from "react-icons/ri";
 
 export default function Header() {
 	return (
-		<div className="flex justify-between h-max py-4 items-center relative z-10">
-			<span className="flex sm:hidden">
+		<div className="flex justify-between h-max py-4 items-center relative z-10 w-full ">
+			<span className="flex md:hidden w-1/2 absolute top-4 ">
 				<RiMenu2Fill size={24} className="text-white" />
 			</span>
-			<div className="flex space-x-2 items-center">
+			<span className="md:flex lg:hidden hidden w-1/3 ">
+				<RiMenu2Fill size={24} className="text-white" />
+			</span>
+			<div className="flex space-x-2 items-center justify-end text-center md:w-auto mx-auto md:mx-0">
 				<img className="w-6 h-6" src={Logo} />
 				<h3 className="text-white font-bold text-xl">TeamFlow</h3>
 			</div>
-			<div className="hidden sm:flex space-x-8">
+			<div className="hidden lg:flex space-x-8 ">
 				{HeaderMenu.map((item) => (
 					<HeaderMenuItem {...item} />
 				))}
 			</div>
-			<div className="hidden sm:flex">
-				<div className="flex space-x-4">
-					<button className="btn btn-ghost">Login</button>
-					<button className="btn btn-secondary">Sign up</button>
-				</div>
+			<div className="space-x-4 hidden md:flex justify-end">
+				<button className="btn btn-ghost">Login</button>
+				<button className="btn btn-secondary">Sign up</button>
 			</div>
 		</div>
 	);
 }
 
-const HeaderMenuItem = (props) => {
+export const HeaderMenuItem = (props) => {
 	const { links, isDropdown, label } = props;
 
 	const Content = (
@@ -38,7 +39,7 @@ const HeaderMenuItem = (props) => {
 				links.map((link) => (
 					<a
 						href="#"
-						className="hover:text-textPrimary text-textPrimary flex text-sm link">
+						className="hover:text-textPrimary text-textPrimary flex text-xs md:text-sm link">
 						{link}
 					</a>
 				))}
@@ -47,8 +48,8 @@ const HeaderMenuItem = (props) => {
 
 	const HeaderItem = () => (
 		<span className="relative">
-			<span className="flex items-center top-[3rem] space-x-2 text-white hover:-translate-y-[2px] transition-transform duration-150 cursor-pointer">
-				<span className="font-light">{label}</span>
+			<span className="flex items-center top-[3rem] space-x-1 text-white hover:-translate-y-[2px] transition-transform duration-150 cursor-pointer">
+				<span className="font-light text-xs md:text-sm">{label}</span>
 				<span>{isDropdown && <BsChevronDown size={14} />}</span>
 			</span>
 		</span>
@@ -64,7 +65,7 @@ const HeaderMenuItem = (props) => {
 	return <HeaderItem />;
 };
 
-const HeaderMenu = [
+export const HeaderMenu = [
 	{
 		isDropdown: true,
 		label: "Product",

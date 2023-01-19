@@ -27,12 +27,12 @@ export default function Testimonials() {
 	// }, []);
 
 	return (
-		<div className="w-full bg-white mt-24  space-y-12 py-12">
+		<div className="hidden lg:block w-full bg-white mt-24  space-y-12 py-12">
 			<h3 className="text-4xl text-[#515151] font-semibold text-center">
 				Client
 				<span className="text-secondary"> Testimonials</span>
 			</h3>
-			<div className="container">
+			<div className="padding-container">
 				<div className="w-full flex flex-col items-center">
 					<div className="w-full relative">
 						<img className="w-full h-auto" src={Map} />

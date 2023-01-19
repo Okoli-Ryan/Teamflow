@@ -5,7 +5,7 @@ import { IoLogoYoutube, IoLogoTwitter, IoLogoFacebook, IoLogoInstagram } from "r
 export default function Footer() {
 	return (
 		<div className="w-full px-8">
-			<div className="grid grid-cols-6 w-full py-12 gap-8">
+			<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 w-full py-12 gap-8">
 				<div className="col-span-2">
 					<span className="flex space-x-2 items-center">
 						<img src={LogoBlue} className="w-6 h-6" />

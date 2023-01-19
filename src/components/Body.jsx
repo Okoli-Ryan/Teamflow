@@ -10,15 +10,15 @@ import Footer from "./Footer";
 
 export default function Body() {
 	return (
-        <>
+		<>
 			<Clients />
 			<WhatYouCanDo />
-            <Features />
-            <Integrate />
-            <Features2 />
-            <Testimonials />
-            <Support />
-            <Footer />
-        </>
+			<Features />
+			<Integrate />
+			<Features2 />
+			<Testimonials />
+			<Support />
+			<Footer />
+		</>
 	);
 }

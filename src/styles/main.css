@@ -57,11 +57,9 @@
 .link {
     transition: all 500ms;
 }
-
-.link:hover {
-    /* padding-left: 10px; */
+.top-line::after{
+    @apply h-1 w-12 bg-secondary absolute -top-2 left-0 content-[""]
 }
-
 
 @keyframes bounce-anim {
 	0%,

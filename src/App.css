@@ -18,5 +18,9 @@
         /* background: #4B4AEF; */
         background-image: url("../assets/images/hero-mask.svg");
     }
+
+    .padding-container {
+        @apply px-[8%]
+    }
 }
 

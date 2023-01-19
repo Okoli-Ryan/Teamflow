@@ -5,13 +5,13 @@ import Magnify from "../assets/images/magnify.svg";
 
 export default function WhatYouCanDo() {
 	return (
-		<div className="container">
+		<div className="padding-container">
 			<div className="w-full flex flex-col items-center">
-				<h3 className="text-4xl text-[#515151] font-semibold">
+				<h3 className="text-2xl md:text-4xl text-[#515151] font-semibold">
 					What you
 					<span className="text-secondary"> can do?</span>
 				</h3>
-				<div className="grid grid-cols-3 justify-between mt-16 gap-12">
+				<div className="grid grid-cols-6 justify-center md:justify-between mt-16 gap-12">
 					<ActionItem
 						src={Graph}
 						bgColor="#FED369"
@@ -38,7 +38,7 @@ export default function WhatYouCanDo() {
 
 function ActionItem({ src, bgColor, title, desc }) {
 	return (
-		<div className="flex flex-col space-y-8 items-center">
+		<div className="flex flex-col space-y-8 items-center col-span-6  sm:col-span-3 lg:col-span-2">
 			<span className="p-4 rounded-lg w-max" style={{ background: bgColor }}>
 				<img src={src} className="w-8 h-8" />
 			</span>
