@@ -61,6 +61,11 @@
     @apply h-1 w-12 bg-secondary absolute -top-2 left-0 content-[""]
 }
 
+.ant-collapse-no-arrow .ant-collapse-header {
+    padding:0 !important;
+    padding-inline-start: 0 !important;
+}
+
 @keyframes bounce-anim {
 	0%,
 	100% {
@@ -127,3 +132,52 @@
 .bounce-delay{
     animation-delay: 500ms;
 }
+
+.slideIn{
+    left: 0
+}
+
+.slideOut{
+    left: -100%;
+}
+
+.fadeIn{
+    opacity: 100%
+}
+
+.fadeOut{
+    opacity: 0;
+}
+
+
+
+/* for webkit based browsers */
+::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #FFCA1D;
+    border-radius: 0.5em;
+  }
+  
+  /* for Firefox */
+  scrollbar {
+    width: 0.5em;
+  }
+  
+  scrollbar thumb {
+    background-color: #FFCA1D;
+    border-radius: 0.5em;
+  }
+  
+  /* for Microsoft Edge */
+  ::-ms-scrollbar {
+    width: 0.5em;
+  }
+  
+  ::-ms-thumb {
+    background-color: #FFCA1D;
+    border-radius: 0.5em;
+  }
+  

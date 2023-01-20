@@ -11,7 +11,7 @@ import { HeaderMenu, HeaderMenuItem } from "./components/Header";
 
 function App() {
 	return (
-		<div className="w-full relative bg-[#FAFAFF]">
+		<div className="w-full relative bg-[#FAFAFF] overflow-x-hidden">
 			<div className=" bg-blueBg  outer-hero-mobile sm:outer-hero w-[65%] h-screen absolute z-10">
 				<img src={Circle} className="absolute w-6 h-6 top-[25%] left-[40%] z-20" />
 				<img src={GreenMouse} className="absolute w-12 h-12 top-[50%] right-[30%] z-20" />
