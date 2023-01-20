@@ -141,6 +141,14 @@
     left: -100%;
 }
 
+.slideInRight{
+    right: 0
+}
+
+.slideOutRight{
+    right: -100%;
+}
+
 .fadeIn{
     opacity: 100%
 }

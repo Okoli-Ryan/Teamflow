@@ -20,10 +20,10 @@ export default function Hero() {
 			<div className="padding-container w-full bg-blueBg md:bg-[#FAFAFF]">
 				<div className="h-full md:h-screen w-full relative flex flex-col">
 					<Header openSideBar={openSideBar} />
-					<div className="grid grid-cols-1 md:grid-cols-2 z-10  flex-1">
+					<div className="grid grid-cols-1 md:grid-cols-2 z-10 lg:mt-0 mt-12 flex-1">
 						<div className="flex flex-col justify-center mt-12 sm:mt-0">
 							<span className="px-4 py-2 bg-white w-max rounded-md mx-auto sm:mx-0">
-								<p className="text-lightgray text-sm sm:text-base">
+								<p className="text-lightgray text-sm md:text-base">
 									👋Welcome to TeamFlow
 								</p>
 							</span>

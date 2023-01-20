@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { HeaderMenu } from "./Header";
 import { Collapse } from "antd";
 import { BsChevronDown } from "react-icons/bs";
@@ -6,7 +6,7 @@ import { BsChevronDown } from "react-icons/bs";
 const { Panel } = Collapse;
 
 export default function SideBar({ isOpen, closeSidebar }) {
-	useLayoutEffect(() => {
+	useEffect(() => {
 		if (isOpen) document.getElementById("root").style.position = "fixed";
 		else {
 			document.getElementById("root").style.position = "static";
@@ -14,10 +14,10 @@ export default function SideBar({ isOpen, closeSidebar }) {
 	}, [isOpen]);
 
 	return (
-		<div className={`h-screen w-full flex fixed z-[200] transition-all duration-700 `}>
+		<>
 			<div
 				// onBlur={closeSidebar}
-				className={`relative flex flex-col gap-8 bg-primary h-full w-2/3 p-8 max-w-[15rem] overflow-y-auto transition-all duration-700 ${
+				className={` flex flex-col gap-8 bg-primary h-screen fixed z-[200] w-2/3 p-8 max-w-[15rem] overflow-y-auto transition-all duration-700 ${
 					isOpen ? "slideIn" : "slideOut"
 				}`}>
 				{HeaderMenu.map((item) => (
@@ -25,11 +25,11 @@ export default function SideBar({ isOpen, closeSidebar }) {
 				))}
 			</div>
 			<div
-				className={`transition-all bg-black/25  duration-700 flex flex-1 ${
-					isOpen ? "fadeIn" : "fadeOut"
+				className={`transitio fixed right-0 z-[150] h-screen w-full  bg-black/25 transition-opacity  duration-1000 flex flex-1 ${
+					isOpen ? "fadeIn slideInRight" : "fadeOut slideOutRight"
 				}`}
 				onClick={closeSidebar}></div>
-		</div>
+		</>
 	);
 }
 
