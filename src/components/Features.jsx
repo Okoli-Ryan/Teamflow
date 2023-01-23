@@ -1,8 +1,8 @@
 import React from "react";
 import Description from "./Description";
-import Feature1 from "../assets/images/Feature-1.png";
+import Feature1 from "../assets/images/Feature-1.webp";
 import FeatureHover1 from "../assets/images/Feature-1-hover.svg";
-import Feature2 from "../assets/images/Feature-2.png";
+import Feature2 from "../assets/images/Feature-2.webp";
 import Feature2Hover1 from "../assets/images/Feature2-hover-1.svg";
 import Feature2Hover2 from "../assets/images/Feature2-hover-2.svg";
 

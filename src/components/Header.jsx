@@ -7,7 +7,7 @@ import { RiMenu2Fill } from "react-icons/ri";
 export default function Header({ openSideBar }) {
 	return (
 		<>
-			<div className="flex justify-between h-max py-4 items-center relative z-10 w-full ">
+			<div className="flex justify-between h-max py-4 items-center relative z-[100] w-full ">
 				<span className="flex md:hidden w-1/2 absolute top-4 " onClick={openSideBar}>
 					<RiMenu2Fill size={24} className="text-white" />
 				</span>

@@ -7,7 +7,6 @@ import Triangle from "./assets/images/triangle.svg";
 import Square from "./assets/images/square.svg";
 import GreenMouse from "./assets/images/green-mouse.svg";
 import Body from "./components/Body";
-import { HeaderMenu, HeaderMenuItem } from "./components/Header";
 
 function App() {
 	return (

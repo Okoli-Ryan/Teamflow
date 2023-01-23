@@ -1,12 +1,12 @@
 import React from "react";
 import Description from "./Description";
-import Feature3 from "../assets/images/Feature3.png";
+import Feature3 from "../assets/images/Feature3.webp";
 import Feature3Rotate from "../assets/images/Figure3Rotate.svg";
 import Feature4 from "../assets/images/Feature4.svg"
 import Feature4Hover1 from "../assets/images/tangerine.svg"
 import Feature4Hover2 from "../assets/images/Yellow.svg"
 import Feature4Hover3 from "../assets/images/Green.svg"
-import Feature5 from "../assets/images/Feature5.png"
+import Feature5 from "../assets/images/Feature5.webp";
 import Feature5Hover from "../assets/images/Feature5Hover.svg"
 
 export default function Features2() {
