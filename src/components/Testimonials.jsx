@@ -12,19 +12,19 @@ export default function Testimonials() {
 	const activeTestimonial = useRef(0);
 	const [testimonials, setTestimonials] = useState(testimonialsList);
 
-	// useEffect(() => {
-	// 	const interval = setInterval(() => {
-	// 		setTestimonials((prev) => {
-	// 			const newTestimonials = [...prev];
-	// 			newTestimonials[activeTestimonial.current].isActive = false;
-	// 			activeTestimonial.current = (activeTestimonial.current + 1) % testimonials.length;
-	// 			newTestimonials[activeTestimonial.current].isActive = true;
-	// 			return newTestimonials;
-	// 		});
+	 useEffect(() => {
+	 	const interval = setInterval(() => {
+	 		setTestimonials((prev) => {
+	 			const newTestimonials = [...prev];
+	 			newTestimonials[activeTestimonial.current].isActive = false;
+	 			activeTestimonial.current = (activeTestimonial.current + 1) % testimonials.length;
+				newTestimonials[activeTestimonial.current].isActive = true;
+				return newTestimonials;
+			});
 
-	// 		return () => clearInterval(interval);
-	// 	}, 4000);
-	// }, []);
+			return () => clearInterval(interval);
+		}, 4000);
+	}, []);
 
 	return (
 		<div className="hidden lg:block w-full bg-white mt-24  space-y-12 py-12">
